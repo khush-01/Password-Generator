@@ -1,0 +1,117 @@
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #e66465, #9198e5);
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pw-container {
+  background-color: indianred;
+  width: 300px;
+}
+
+.pw-header {
+  padding: 1rem;
+}
+
+.pw {
+  height: 5px;
+  width: 100%;
+}
+
+.pw-body {
+  padding: 1rem;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #e66465, #9198e5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.pw-container {
+    background-color: indianred;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    min-width: 350px;
+}
+
+.pw-header {
+    padding: 1rem;
+}
+
+.pw {
+    background-color: white;
+    color: royalblue;
+    border-radius: 5px;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .pw button {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    color: rgb(29, 2, 56);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.3rem 0.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: all 0.2s ease-in-out; 
+    opacity: 0;
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.generate {
+    background-color: #ecb602;
+    border: none;
+    color: rebeccapurple;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+}
